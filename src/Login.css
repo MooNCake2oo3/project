@@ -1,0 +1,78 @@
+.login-page {
+    height: 100vh;
+    background: url('C:\Users\Sayantan\Downloads\clean-medical-background\v870-tang-36.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6eff9; /* A light blue background color as a fallback */
+  }
+  
+  .login-container {
+    max-width: 340px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.95); /* Slightly transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #4cae4c;
+  }
+  
+  .redirect {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .redirect button {
+    background: none;
+    color: #337ab7;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .redirect button:hover {
+    text-decoration: underline;
+  }
+  
+  
+  

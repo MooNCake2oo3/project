@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Login from './Login'; // Assuming your Login component is in the same directory
+import Signup from './Signup'; // Assuming your Signup component is in the same directory
 
-function App() {
+const App = () => {
+  // This state determines which page is currently active, 'login' or 'signup'
+  const [currentPage, setCurrentPage] = useState('login');
+
+  // This function is used to change between pages
+  const changePage = (page) => {
+    setCurrentPage(page);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {currentPage === 'login' && <Login changePage={changePage} />}
+      {currentPage === 'signup' && <Signup />}
     </div>
   );
-}
+};
 
 export default App;
+
+
+
